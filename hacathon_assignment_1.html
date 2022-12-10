@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Project 1</title>
+    <style>
+        body {
+            background: radial-gradient(rgb(161, 64, 80), rgb(218, 135, 135), rgb(220, 223, 65), rgb(228, 128, 128), rgb(155, 20, 20));
+        }
+
+        #top {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            padding: 0;
+        }
+
+        #top_one {
+            text-align: center;
+            margin-left: 20%;
+        }
+
+        #top_two {
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        #form {
+            background-color: rgb(216, 209, 110);
+            margin: auto;
+            /*margin-left: 18%;
+            margin-right: 10%;
+            margin-top: 6%;
+            margin-bottom: 10%;*/
+            padding: 10px;
+            border: 2px solid rgb(180, 170, 170);
+            width: max-content;
+            border-radius: 10px;
+        }
+
+        ul {
+
+            list-style: disc;
+
+        }
+
+        li {
+            padding: 12px;
+        }
+
+        #subm {
+            margin-left: 43%;
+            cursor: pointer;
+            border: none;
+
+        }
+        #form input{
+            width: fit-content;
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <div id="top">
+
+        <div id="top_one">
+            <h2>freeCodeCamp Survey Form</h2>
+            Thank you for taking the time to help us improve the platform
+        </div>
+    </div>
+
+    <div id="form">
+        <form action="#" class="classfom">
+            <ul id="list">
+                <li> <label for="Name">Name</label><br>
+                    <input type="text" placeholder="Enter Name">
+                </li>
+
+                <li> <label for="Email">Email Id</label><br>
+                    <input type="text" placeholder="Enter Email">
+                </li>
+
+                <li> <label for="age">Age (Optional)</label><br>
+                    <input type="number" placeholder="Enter Age">
+                </li>
+
+                <li><label for="qualify">Which option best describes your current role ?</label><br>
+                    <select name="drop-down" id="Quali">
+
+                        <option selected value disabled>Select Role</option>
+                        <option value="stud">Student</option>
+                        <option value="Job">Full Time Job</option>
+                        <option value="Learn">Full Time Learner</option>
+                        <option value="ns">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </li>
+
+                <li>Would you recommend freeCodeCamp to a Friend ?<br>
+                    <input type="radio" name="profession">Definitely
+                    <input type="radio" name="profession">Maybe
+                    <input type="radio" name="profession">Not Sure
+                </li>
+
+                <li><label for="features"> What is your favorite feature of freeCodeCamp ?</label> <br>
+                    <select name="drop-down" id="Participate">
+
+                        <option selected value disabled>Select feature</option>
+                        <option value="feature">Challenges</option>
+                        <option value="feature">Projects</option>
+                        <option value="feature">Community</option>
+                        <option value="feature">Open Source</option>
+                    </select>
+                </li>
+
+                <li><label for="improv">What would you like to see improved</label><br>
+                    <input type="checkbox" name="improv">Front-end Projects <br>
+                    <input type="checkbox" name="improv">Back-end Projects <br>
+                    <input type="checkbox" name="improv">Data Visualization <br>
+                    <input type="checkbox" name="improv">Challenges <br>
+                    <input type="checkbox" name="improv">Open Source Community <br>
+                    <input type="checkbox" name="improv">Gitter help rooms <br>
+                    <input type="checkbox" name="improv">Videos <br>
+                    <input type="checkbox" name="improv">City Meetups <br>
+                    <input type="checkbox" name="improv">Wiki <br>
+                    <input type="checkbox" name="improv">Forum <br>
+                    <input type="checkbox" name="improv">Additional Courses
+
+                </li>
+
+                <li><label for="comment">Any comments or suggestions ?</label><br>
+                    <textarea name="suggest" id="comment" cols="30" rows="5"
+                        placeholder="Enter your comment here..."></textarea>
+                </li>
+
+
+            </ul>
+
+            <button id="subm"><span>Submit</span></button>
+
+    </div>
+
+    </form>
+
+</body>
+
+</html>
